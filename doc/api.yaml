@@ -1,0 +1,16 @@
+openapi: "3.0.0"
+info:
+  version: 0.0.2
+  title: LDAP Facade
+paths:
+  /test:
+    get:
+      operationId: Test
+      summary: fails
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: 'models.yaml#/components/schemas/foo'

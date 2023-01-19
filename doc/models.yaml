@@ -1,0 +1,11 @@
+components:
+  schemas:
+    foo:
+      type: array
+      items:
+        $ref: '#/components/schemas/bar'
+    bar:
+      type: object
+      properties:
+        baz:
+          type: string
